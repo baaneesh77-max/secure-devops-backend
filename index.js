@@ -32,6 +32,10 @@ app.get('/profile', (req, res) => {
     </html>
   `);
 });
+app.get('/debug-secret', (req, res) => {
+  const password = "SuperSecret123";
+  res.send("Debug password is: " + password);
+});
 
 app.listen(3000, () => {
   console.log('Server running on port 3000');
