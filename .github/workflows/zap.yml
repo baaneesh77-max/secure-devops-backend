@@ -31,3 +31,4 @@ jobs:
         with:
           target: 'http://127.0.0.1:3000'
           artifact_name: zap_report
+	  allow_issue_writing: false
